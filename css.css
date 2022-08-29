@@ -129,11 +129,11 @@ form .input .btn:hover{
     display: none;
 }
 .active{
-    background: blue;
+    background: rgb(0, 0, 203);
     color: white;
 }
-@media screen and(max-width : 767px) {
+/* @media screen and(max-width : 767px) {
     .left-column {
         width: 10%;
-    }
+    } */
 }

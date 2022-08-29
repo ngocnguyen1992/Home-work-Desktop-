@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="left-column">
+                <button data-tab="1"  class="button">Bài 1</button><br>
+                <button data-tab="2"  class="button">Bài 2</button><br>
+                <button data-tab="3" class="button">Bài 3</button><br>
+                <button data-tab="4" class="button">Bài 4</button><br>
+                <button data-tab="5" class="button">Bài 5</button><br>
+            </div>
+            <div class="box">
+                <div class="right-column">
+                    <p class="head-content">❗ 
+                        <b>Đây chỉ là gợi ý nên người làm có thể làm khác gợi ý, miễn đúng theo yêu cầu trong file đề bài</b></p>
+                    </div>
+                    <div data-tabId="1" class="content" id="1">
+                        <div class="card-head">
+                            <h4>💰 Tính Tiền Lương Nhân Viên</h4>
+                        </div>
+                        <div class="content-bai1">
+                            <p>💡<b>Gợi ý:</b>
+                                <br>
+                                Công thức: Lương = Lương 1 ngày * số ngày làm
+                                <br>
+                                Kiến thức áp dụng:<br><br>
+                            <ul>
+                                <li>Tìm tới thẻ và lấy giá trị</li>
+                                <li>Tạo hàm cơ bản</li>
+                                <li>Gắn sự kiện click cho button</li>
+                                <li>Thay đổi nội dung cho thẻ</li>
+                                <li>Xử lý load trang với button của form</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <form>
+                            <div class="input">
+                                <input type="number" placeholder="Nhập Lương Một Ngày">
+                                <input type="number" placeholder="Số Ngày Làm"><br>
+                                <input type="Button" class="btn" value="Tính Lương" onclick="tinhluong()"><br>
+                                <input type="text" id="kq">
+                            </div>              
+                        </form>
+                    </div>    
+                    <div data-tabId="2"  class="content" id="2">
+                        <div class="card-head">
+                            <h4>💰 Tính Trung Bình</h4>
+                        </div>
+                        <div class="content-bai1">
+                            <p>💡<b>Gợi ý:</b>
+                                <br>
+                                Công thức: Lương = Lương 1 ngày * số ngày làm
+                                <br>
+                                Kiến thức áp dụng:<br><br>
+                            <ul>
+                                <li>Tìm tới thẻ và lấy giá trị</li>
+                                <li>Tạo hàm cơ bản</li>
+                                <li>Gắn sự kiện click cho button</li>
+                                <li>Thay đổi nội dung cho thẻ</li>
+                                <li>Xử lý load trang với button của form</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <form>
+                            <div class="input">
+                                <input type="number" class="number" id="1" placeholder="Nhập số thứ 1">
+                                <input type="number" class="number" id="2" placeholder="Nhập số thứ 2">
+                                <input type="number" class="number" id="3" placeholder="Nhập số thứ 3"><br>
+                                <input type="number" class="number" id="4" placeholder="Nhập số thứ 4">
+                                <input type="number" class="number" id="5" placeholder="Nhập số thứ 5"><br>
+                                <input type="Button" value="Tính Trung Bình" class="btn" onclick="avg ()">
+                                <input type="text" id="result">
+                            </div>              
+                        </form>
+                    </div> 
+                    <div data-tabId="3"  class="content" id="3">
+                        <div class="card-head">
+                            <h4>💰 Tính Tiền Tệ</h4>
+                        </div>
+                        <div class="content-bai1">
+                            <p>💡<b>Gợi ý:</b>
+                                <br>
+                                Công thức: Lương = Lương 1 ngày * số ngày làm
+                                <br>
+                                Kiến thức áp dụng:<br><br>
+                            <ul>
+                                <li>Tìm tới thẻ và lấy giá trị</li>
+                                <li>Tạo hàm cơ bản</li>
+                                <li>Gắn sự kiện click cho button</li>
+                                <li>Thay đổi nội dung cho thẻ</li>
+                                <li>Xử lý load trang với button của form</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <form>
+                            <div class="input">
+                                <input type="number" id="usd" placeholder="Nhập số tiền USD"><br>
+                                <input type="button" class="btn" value="Quy Đổi Tiền" onclick="result()"><br>
+                                <input type="text" id="kq">
+                            </div>              
+                        </form>
+                    </div> 
+                    <div data-tabId="4"  class="content" id="4">
+                        <div class="card-head">
+                            <h4>💰 Tính Chu Vi & Diện Tích</h4>
+                        </div>
+                        <div class="content-bai1">
+                            <p>💡<b>Gợi ý:</b>
+                                <br>
+                                Công thức: Lương = Lương 1 ngày * số ngày làm
+                                <br>
+                                Kiến thức áp dụng:<br><br>
+                            <ul>
+                                <li>Tìm tới thẻ và lấy giá trị</li>
+                                <li>Tạo hàm cơ bản</li>
+                                <li>Gắn sự kiện click cho button</li>
+                                <li>Thay đổi nội dung cho thẻ</li>
+                                <li>Xử lý load trang với button của form</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <form>
+                            <div class="input">
+                                <input type="number" id="witdh" placeholder="Nhập chiều dài">
+                                <input type="number" id="height" placeholder="Nhập chiều rộng"><br>
+                                <input type="button" value="Tính" class="btn" onclick="result ()"><br>
+                                <input type="text number" id="kq">
+                            </div>              
+                        </form>
+                    </div> 
+                    <div data-tabId="5"  class="content" id="5">
+                        <div class="card-head">
+                            <h4>💰 Tính Ký Số</h4>
+                        </div>
+                        <div class="content-bai1">
+                            <p>💡<b>Gợi ý:</b>
+                                <br>
+                                Công thức: Lương = Lương 1 ngày * số ngày làm
+                                <br>
+                                Kiến thức áp dụng:<br><br>
+                            <ul>
+                                <li>Tìm tới thẻ và lấy giá trị</li>
+                                <li>Tạo hàm cơ bản</li>
+                                <li>Gắn sự kiện click cho button</li>
+                                <li>Thay đổi nội dung cho thẻ</li>
+                                <li>Xử lý load trang với button của form</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <form>
+                            <div class="input">
+                                <input type="number" placeholder="Nhập Lương Một Ngày">
+                                <input type="number" placeholder="Số Ngày Làm"><br>
+                                <input type="Button" class="btn" value="Tính Lương" onclick="tinhluong()"><br>
+                                <input type="text" id="kq">
+                            </div>              
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+   
+</body>
+</html>
